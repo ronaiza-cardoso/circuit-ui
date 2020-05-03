@@ -14,7 +14,7 @@
  */
 
 import React, { Fragment } from 'react';
-import { select, boolean } from '@storybook/addon-knobs/react';
+import { select, boolean } from '@storybook/addon-knobs';
 import { values } from 'lodash/fp';
 
 import { colorNames } from '../../styles/constants';

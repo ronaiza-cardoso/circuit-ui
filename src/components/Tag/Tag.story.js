@@ -15,7 +15,7 @@
 
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { boolean } from '@storybook/addon-knobs/react';
+import { boolean } from '@storybook/addon-knobs';
 import { Check } from '@sumup/icons';
 
 import docs from './Tag.docs.mdx';

@@ -15,7 +15,7 @@
 
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { boolean, text } from '@storybook/addon-knobs/react';
+import { boolean, text } from '@storybook/addon-knobs';
 import { FlagDe, FlagUs, FlagFr } from '@sumup/icons';
 
 import { uniqueId } from '../../util/id';

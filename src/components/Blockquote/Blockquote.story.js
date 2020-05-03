@@ -14,7 +14,7 @@
  */
 
 import React, { Fragment } from 'react';
-import { select, text } from '@storybook/addon-knobs/react';
+import { select, text } from '@storybook/addon-knobs';
 
 import docs from './Blockquote.docs.mdx';
 import Blockquote from './Blockquote';

@@ -14,7 +14,7 @@
  */
 
 import React from 'react';
-import { select, boolean, text } from '@storybook/addon-knobs/react';
+import { select, boolean, text } from '@storybook/addon-knobs';
 
 import SubHeading from './SubHeading';
 import docs from './SubHeading.docs.mdx';

@@ -1,7 +1,5 @@
 import React from 'react';
 import { addDecorator, addParameters } from '@storybook/react';
-import { withKnobs } from '@storybook/addon-knobs';
-import { withA11y } from '@storybook/addon-a11y';
 import { ThemeProvider } from 'emotion-theming';
 import styled from '@emotion/styled';
 import { light } from '@sumup/design-tokens';
@@ -43,6 +41,10 @@ addParameters({
   docs: { components }
 });
 
+export const parameters = {
+  actions: { argTypesRegex: "^on.*" },
+};
+
 const Story = styled.div`
   display: flex;
   flex-direction: column;
@@ -65,9 +67,6 @@ const withThemeProvider = storyFn => (
     {storyFn()}
   </ThemeProvider>
 );
-
-addDecorator(withA11y);
-addDecorator(withKnobs);
 
 // These decorators need to be disabled for StoryShots to work.
 if (!__TEST__) {

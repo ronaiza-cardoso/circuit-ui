@@ -14,7 +14,7 @@
  */
 
 import React from 'react';
-import { select, boolean } from '@storybook/addon-knobs/react';
+import { select, boolean } from '@storybook/addon-knobs';
 
 import ButtonGroup from '.';
 import Button from '../Button';

@@ -16,7 +16,7 @@
 import React, { useState } from 'react';
 import { includes, debounce } from 'lodash/fp';
 import { action } from '@storybook/addon-actions';
-import { boolean } from '@storybook/addon-knobs/react';
+import { boolean } from '@storybook/addon-knobs';
 
 import { uniqueId } from '../../util/id';
 

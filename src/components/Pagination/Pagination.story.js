@@ -14,7 +14,7 @@
  */
 
 import React from 'react';
-import { number, text } from '@storybook/addon-knobs/react';
+import { number, text } from '@storybook/addon-knobs';
 
 import docs from './Pagination.docs.mdx';
 import Pagination from '.';

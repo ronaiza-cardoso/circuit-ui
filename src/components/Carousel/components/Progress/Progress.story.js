@@ -14,7 +14,7 @@
  */
 
 import React from 'react';
-import { boolean, number } from '@storybook/addon-knobs/react';
+import { boolean, number } from '@storybook/addon-knobs';
 
 import Progress from './Progress';
 import { SLIDE_DURATION } from '../../constants';

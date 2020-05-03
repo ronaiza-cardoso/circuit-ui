@@ -14,7 +14,7 @@
  */
 
 import React, { useState } from 'react';
-import { text, boolean } from '@storybook/addon-knobs/react';
+import { text, boolean } from '@storybook/addon-knobs';
 
 import Hamburger from './Hamburger';
 

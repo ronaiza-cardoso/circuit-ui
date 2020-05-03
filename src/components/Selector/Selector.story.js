@@ -14,7 +14,7 @@
  */
 
 import React, { useState } from 'react';
-import { boolean } from '@storybook/addon-knobs/react';
+import { boolean } from '@storybook/addon-knobs';
 
 import docs from './Selector.docs.mdx';
 import Selector from './Selector';
