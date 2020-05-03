@@ -14,7 +14,7 @@
  */
 
 import React from 'react';
-import { select, boolean, text } from '@storybook/addon-knobs';
+import { select, text } from '@storybook/addon-knobs';
 import { ThumbUp } from '@sumup/icons';
 
 import docs from './Button.docs.mdx';
@@ -29,17 +29,8 @@ export default {
   }
 };
 
-export const Primary = () => (
-  <Button
-    variant={select('Variant', ['primary', 'secondary', 'tertiary'], 'primary')}
-    size={select('Size', ['kilo', 'mega', 'giga'], 'mega')}
-    href={boolean('Link', false) ? '#' : undefined}
-    target={boolean('Link', false) ? '_blank' : undefined}
-    stretch={boolean('Stretched', false)}
-    disabled={boolean('Disabled', false)}
-  >
-    {text('Button Label', 'Button')}
-  </Button>
+export const Primary = (props: {}) => (
+  <Button {...props}>{text('Button Label', 'Button')}</Button>
 );
 
 export const Secondary = () => (
